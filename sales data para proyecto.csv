@@ -1,0 +1,99 @@
+Dashboard comercial 2023 — rentabilidad y descuentos;;;;;;;;;;;;;
+Ventas oficiales calculadas · Pesos argentinos (ARS) · Foco: entender por qué el margen bruto es negativo;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+Ventas netas;;Utilidad bruta;;Margen bruto;;Tasa de operaciones con pérdida;;Pérdida bruta;;Descuento promedio;;;
+ARS 59,686,173.28;;-ARS 4,155,920.36;;-7.0%;;60.4%;;ARS 5,952,257.47;;15.2%;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+Evolución mensual de la utilidad bruta;;;;;;;Pérdida y tasa de operaciones con pérdida por descuento;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+Utilidad bruta por categoría;;;;;;;Utilidad bruta por región;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+Diagnóstico de la pérdida;;;;;;;;;;;;;
+El descuento es el detonante principal: 60.4% de las operaciones visibles pierden dinero. En esas filas, el descuento promedio es 18.8%, frente a un punto de equilibrio promedio de 7.4%. Las operaciones rentables generan ARS 1,796,337, pero no compensan pérdidas por ARS 5,952,257.;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+Nota: Product_ID se excluye del análisis hasta corregir el catálogo multiclase. El dashboard usa Product_Category como dimensión independiente.;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+Control comercial y escenarios;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+Brecha de descuento;;;;;;;Simulador: limitar descuentos;;;;;;
+Descuento promedio;;Margen previo promedio;;Brecha;;;Escenario;Tope;Recuperación;Utilidad proyectada;Margen proyectado;Ventas proyectadas;Decisión
+15.2%;;14.3%;;1.0%;;;Tope 5%;5%;ARS 7,428,833;ARS 3,272,913;4.9%;ARS 67,115,007;Recupera rentabilidad
+;;;;;;;Tope 10%;10%;ARS 4,808,927;ARS 653,007;1.0%;ARS 64,495,100;Recupera rentabilidad
+;;;;;;;Punto de equilibrio;-1;ARS 5,952,257;ARS 1,796,337;2.7%;ARS 65,638,431;Recupera rentabilidad
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+Descuento vs. margen por operación;;;;;;;Ranking de vendedores;;;;;;
+;;;;;;;Rank;Vendedor;Ventas;Utilidad;Margen;Descuento;Tasa pérdida
+;;;;;;;1;Alice;ARS 11,476,646;-ARS 626,263;-5.5%;14.1%;57.3%
+;;;;;;;3;Bob;ARS 11,768,704;-ARS 773,124;-6.6%;14.2%;58.2%
+;;;;;;;2;Charlie;ARS 9,827,691;-ARS 653,165;-6.6%;15.5%;62.1%
+;;;;;;;5;David;ARS 13,674,409;-ARS 1,219,425;-8.9%;16.5%;61.7%
+;;;;;;;4;Eve;ARS 12,938,724;-ARS 883,944;-6.8%;15.8%;62.7%
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;Heatmap de margen: categoría × canal;;;;;;
+;;;;;;;Categoría;Online;Retail;Total;;;
+;;;;;;;Clothing;-9.1%;-6.2%;-7.4%;;;
+;;;;;;;Electronics;-4.9%;-6.4%;-5.6%;;;
+;;;;;;;Food;-6.6%;-7.6%;-7.1%;;;
+;;;;;;;Furniture;-8.3%;-7.1%;-7.7%;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+Top 15 operaciones con mayor pérdida — responde a los filtros;;;;;;;;;;;;;
+Transaction_ID;Fecha;Vendedor;Región;Categoría;Descuento;Punto equilibrio;Pérdida;;;;;;
+884;02/08/2023;Eve;South;Furniture;30.0%;5.5%;-ARS 54,936;;;;;;
+332;23/02/2023;Bob;West;Food;27.0%;2.3%;-ARS 53,939;;;;;;
+520;30/03/2023;David;West;Clothing;29.0%;7.0%;-ARS 50,759;;;;;;
+189;31/08/2023;Eve;South;Food;28.0%;4.0%;-ARS 50,386;;;;;;
+552;28/10/2023;David;North;Clothing;25.0%;1.7%;-ARS 48,726;;;;;;
+186;10/05/2023;Bob;South;Clothing;24.0%;0.4%;-ARS 47,912;;;;;;
+41;16/03/2023;David;West;Furniture;25.0%;6.1%;-ARS 43,855;;;;;;
+424;27/04/2023;Alice;South;Furniture;28.0%;0.7%;-ARS 43,306;;;;;;
+339;02/04/2023;David;South;Electronics;27.0%;6.0%;-ARS 42,880;;;;;;
+305;13/07/2023;Alice;South;Food;25.0%;5.6%;-ARS 42,730;;;;;;
+185;22/06/2023;Eve;North;Furniture;26.0%;7.6%;-ARS 41,856;;;;;;
+994;26/06/2023;David;North;Furniture;25.0%;3.4%;-ARS 40,534;;;;;;
+757;31/12/2023;Eve;West;Clothing;19.0%;0.2%;-ARS 40,371;;;;;;
+270;12/10/2023;David;North;Electronics;29.0%;1.9%;-ARS 39,813;;;;;;
+53;27/10/2023;David;North;Furniture;30.0%;8.0%;-ARS 39,584;;;;;;
+;;;;;;;;;;;;;
+;;;;;;;;;;;;;
+Filtros disponibles a la derecha: mes, región, vendedor, categoría, canal, tipo de cliente y medio de pago. Use el icono de borrar filtro de cada segmentador para volver al total.;;;;;;;;;;;;;
